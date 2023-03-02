@@ -68,6 +68,43 @@ a {
   margin-right: 0.5rem;
 }
 
+/* Center the loader */
+#loader {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  object-fit: cover;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+#myDiv {
+  display: none;
+  margin: 0;
+  text-align: center;
+}
+
 .banniere {
   padding: 1rem 1rem;
   position: relative;

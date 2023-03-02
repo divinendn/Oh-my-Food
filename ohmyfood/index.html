@@ -10,8 +10,11 @@
   <link href="./public/css/style.css" rel="stylesheet">
   <title>Oh my food</title>
 </head>
-<body>
 
+<body onload="myFunction()" id="myDiv" class="animate-bottom">
+  <div id="loader">
+    <img src="./images/logo/ohmyfood.png">
+  </div>
   <header>
     <div class="banniere">
         <img src="./images/logo/ohmyfood.png" alt="logo" class="banniere__logo">
@@ -142,4 +145,16 @@
     </div>
   </footer>
 </body>
+<script>
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+</script>
 </html>
