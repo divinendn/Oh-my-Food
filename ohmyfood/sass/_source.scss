@@ -64,6 +64,14 @@ a {
     padding: $appPadding;
   }
 
+  &__logo {
+    color: white;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: $appPadding;
+  }
+  
   &__list {
     list-style: none;
     padding: 0;
