@@ -1,0 +1,11 @@
+.header{
+  text-align: center;
+  padding: 1rem $appPadding;
+  position: relative;
+  z-index: 1000;
+
+  &__img{
+    object-fit: cover;
+    height: 26px;
+  }
+}
